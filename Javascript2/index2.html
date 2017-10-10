@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Siaip viskas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+ 
+</head>
+<body>
+
+
+        
+        <div>
+            <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Vilnius_Modern_Skyline_At_Dusk%2C_Lithuania_-_Diliff.jpg/300px-Vilnius_Modern_Skyline_At_Dusk%2C_Lithuania_-_Diliff.jpg">
+           
+        </div>
+
+    <script>
+         function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+ 
+ 
+        async function count1() {
+            var i = 0;
+            while(i < 50) {
+                console.log("First counter: " + i);
+                i++;
+                await sleep(500);
+            }
+        }
+ 
+ 
+        async function count2() {
+            var i = 0;
+            while(i < 20) {
+                console.log("Second counter: " + i);
+                i++;
+                await sleep(2000);
+            }
+        }
+ 
+        count1();
+        count2();
+
+       
+    </script>
+
+</body>
+
+</html>
